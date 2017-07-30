@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.amank.contectmenu.MainActivity"
+    android:padding="10dp"
+    android:paddingTop="20dp"
+    android:background="#ffccff" >
+
+  <EditText
+      android:id="@+id/txtNum"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Phone Number"
+      android:inputType="numberDecimal"
+      android:maxLength="10"
+      />
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_below="@+id/txtNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/txtRoll"
+        android:layout_below="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"/>
+    <RadioGroup
+        android:id="@+id/rdgrp1"
+        android:layout_below="@+id/txtRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Female"/>
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/chBox"
+        android:layout_below="@+id/rdgrp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept Terms and Condition"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_below="@+id/chBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtV"
+        android:layout_below="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"/>
+
+</RelativeLayout>
